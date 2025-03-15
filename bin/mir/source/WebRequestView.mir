@@ -1,0 +1,1215 @@
+[ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 7; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 8; ]
+import Toybox.Lang;
+[ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 9; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 10; ]
+import Toybox.Time;
+[ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 11; ]
+import Toybox.Time.Gregorian;
+[ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 13; @position = 6; ]
+const OUTER_TIME_SIZE = 2;
+[ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 14; @position = 6; ]
+const FONT_SMALL_HEIGHT = 27;
+[ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 15; @position = 6; ]
+const FONT_TINY_HEIGHT = 30;
+[ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 16; @position = 6; ]
+const FONT_TINY_LETTER_WIDTH = 15;
+[ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 17; @position = 6; ]
+const FONT_XTINY_HEIGHT = 5;
+[ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 19; ]
+function minToString(min as Number) as String {
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_19_46_25_0_start:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 20 4 ]
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_20_4_24_4_if_stmt:
+    %tmp.2 = lgetv %min;
+    %tmp.3 = 10;
+    %tmp.4 = lt %tmp.2 %tmp.3;
+    bf %tmp.4 @C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_20_4_24_4_if_false;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_20_4_24_4_if_true:
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_20_16_22_4_start:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 21 8 ]
+    %tmp.5 = "0";
+    %tmp.6 = lgetv %min;
+    %tmp.7 = getv function %tmp.6 :toString;
+    %tmp.8 = invoke %tmp.6 %tmp.7();
+    %tmp.9 = add %tmp.5 %tmp.8;
+    ret %tmp.9;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_20_16_22_4_stop:
+    goto @C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_20_4_24_4_if_end;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_20_4_24_4_if_false:
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_22_11_24_4_start:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 23 8 ]
+    %tmp.10 = lgetv %min;
+    %tmp.11 = getv function %tmp.10 :toString;
+    %tmp.12 = invoke %tmp.10 %tmp.11();
+    ret %tmp.12;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_22_11_24_4_stop:
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_20_4_24_4_if_end:
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_19_46_25_0_stop:
+}
+[ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 27; ]
+class CustomRoundedRectangle{
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 27; ]
+    <init> {
+    }
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 27; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 29; @position = 8; ]
+    var pos_x;
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 30; @position = 8; ]
+    var pos_y;
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 31; @position = 8; ]
+    var mWidth;
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 32; @position = 8; ]
+    var mHeight;
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 33; @position = 8; ]
+    var mRadius;
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 34; @position = 8; ]
+    var mColor;
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 36; ]
+    function initialize(x, y, width, height, radius, color) as Void {
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_36_60_43_4_start:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 37 8 ]
+        %tmp.2 = lgetv %x;
+        putv self :pos_x %tmp.2;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 38 8 ]
+        %tmp.4 = lgetv %y;
+        putv self :pos_y %tmp.4;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 39 8 ]
+        %tmp.6 = lgetv %height;
+        putv self :mHeight %tmp.6;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 40 8 ]
+        %tmp.8 = lgetv %width;
+        putv self :mWidth %tmp.8;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 41 8 ]
+        %tmp.10 = lgetv %radius;
+        putv self :mRadius %tmp.10;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 42 8 ]
+        %tmp.12 = lgetv %color;
+        putv self :mColor %tmp.12;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_36_60_43_4_stop:
+    }
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 45; ]
+    public
+    function print(dc as Dc) as Void {
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_45_44_48_4_start:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 46 8 ]
+        %tmp.1 = lgetv %dc;
+        %tmp.2 = getv function %tmp.1 :setColor;
+        %tmp.4 = getv ? :mColor;
+        %tmp.5 = getm $.Toybox.Graphics;
+        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 47 8 ]
+        %tmp.7 = lgetv %dc;
+        %tmp.8 = getv function %tmp.7 :fillRoundedRectangle;
+        %tmp.10 = getv ? :pos_x;
+        %tmp.12 = getv ? :pos_y;
+        %tmp.14 = getv ? :mWidth;
+        %tmp.16 = getv ? :mHeight;
+        %tmp.18 = getv ? :mRadius;
+        invoke %tmp.7 %tmp.8(%tmp.10, %tmp.12, %tmp.14, %tmp.16, %tmp.18);
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_45_44_48_4_stop:
+    }
+}
+[ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 51; ]
+class IncomingTrain{
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 51; ]
+    <init> {
+    }
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 51; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 53; @position = 8; ]
+    var mName;
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 54; @position = 8; ]
+    var mDelay;
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 55; @position = 8; ]
+    var mArrivalTime;
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 56; @position = 8; ]
+    var mDestination;
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 57; @position = 8; ]
+    var mDestinationCurrentPosX;
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 58; @position = 8; ]
+    var mRowNb;
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 59; @position = 8; ]
+    var mRowHeight;
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 60; @position = 8; ]
+    var mRowBgColor;
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 61; @position = 8; ]
+    var mBackground;
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 63; ]
+    function initialize(rowNb, rowHeight, rowWidth, rowBgColor) as Void {
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_63_64_69_4_start:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 64 8 ]
+        %tmp.1 = 0;
+        putv self :mDestinationCurrentPosX %tmp.1;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 65 8 ]
+        %tmp.3 = lgetv %rowNb;
+        putv self :mRowNb %tmp.3;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 66 8 ]
+        %tmp.5 = lgetv %rowHeight;
+        putv self :mRowHeight %tmp.5;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 67 8 ]
+        %tmp.7 = lgetv %rowBgColor;
+        putv self :mRowBgColor %tmp.7;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 68 8 ]
+        %tmp.11 = getv ? :CustomRoundedRectangle;
+        %tmp.12 = 0;
+        %tmp.14 = lgetv %rowWidth;
+        %tmp.15 = 6;
+        %tmp.16 = div %tmp.14 %tmp.15;
+        %tmp.18 = getv ? :OUTER_TIME_SIZE;
+        %tmp.19 = add %tmp.16 %tmp.18;
+        %tmp.21 = getv ? :mRowHeight;
+        %tmp.23 = getv ? :mRowNb;
+        %tmp.24 = mul %tmp.21 %tmp.23;
+        %tmp.25 = add %tmp.19 %tmp.24;
+        %tmp.27 = lgetv %rowWidth;
+        %tmp.29 = lgetv %rowHeight;
+        %tmp.30 = 0;
+        %tmp.32 = lgetv %rowBgColor;
+        %tmp.8 = newc %tmp.11 (%tmp.12, %tmp.25, %tmp.27, %tmp.29, %tmp.30, %tmp.32);
+        putv self :mBackground %tmp.8;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_63_64_69_4_stop:
+    }
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 71; ]
+    public
+    function updateInfo(name, delay, arrivalTime, destination) as Void {
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_71_78_76_4_start:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 72 8 ]
+        %tmp.2 = lgetv %name;
+        putv self :mName %tmp.2;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 73 8 ]
+        %tmp.4 = lgetv %delay;
+        putv self :mDelay %tmp.4;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 74 8 ]
+        %tmp.6 = lgetv %arrivalTime;
+        putv self :mArrivalTime %tmp.6;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 75 8 ]
+        %tmp.8 = lgetv %destination;
+        putv self :mDestination %tmp.8;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_71_78_76_4_stop:
+    }
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 78; ]
+    public
+    function print(dc as Dc) as Void {
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_78_44_101_4_start:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 79 8 ]
+        %tmp.2 = getv ? :mBackground;
+        %tmp.3 = getv function %tmp.2 :print;
+        %tmp.5 = lgetv %dc;
+        invoke %tmp.2 %tmp.3(%tmp.5);
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 80 8 ]
+        [ "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_78_44_101_4_start" "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_78_44_101_4_stop" ]
+        %boundaryTrainNameArrivalTime.1 = local;
+        %tmp.6 = lgetv %dc;
+        %tmp.7 = getv function %tmp.6 :getWidth;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.9 = 4;
+        %tmp.10 = div %tmp.8 %tmp.9;
+        %tmp.12 = getv ? :OUTER_TIME_SIZE;
+        %tmp.13 = 8;
+        %tmp.14 = mul %tmp.12 %tmp.13;
+        %tmp.15 = add %tmp.10 %tmp.14;
+        lputv %boundaryTrainNameArrivalTime.1 %tmp.15;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 81 8 ]
+        %tmp.16 = lgetv %dc;
+        %tmp.17 = getv function %tmp.16 :setColor;
+        %tmp.18 = 0xffff44;
+        %tmp.20 = getv ? :mRowBgColor;
+        invoke %tmp.16 %tmp.17(%tmp.18, %tmp.20);
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 83 8 ]
+        %tmp.21 = lgetv %dc;
+        %tmp.22 = getv function %tmp.21 :drawText;
+        %tmp.24 = lgetv %boundaryTrainNameArrivalTime.1;
+        %tmp.26 = getv ? :OUTER_TIME_SIZE;
+        %tmp.27 = add %tmp.24 %tmp.26;
+        %tmp.28 = lgetv %dc;
+        %tmp.29 = getv function %tmp.28 :getWidth;
+        %tmp.30 = invoke %tmp.28 %tmp.29();
+        %tmp.31 = 6;
+        %tmp.32 = div %tmp.30 %tmp.31;
+        %tmp.34 = getv ? :mRowHeight;
+        %tmp.36 = getv ? :mRowNb;
+        %tmp.37 = 0.25;
+        %tmp.38 = add %tmp.36 %tmp.37;
+        %tmp.39 = mul %tmp.34 %tmp.38;
+        %tmp.40 = add %tmp.32 %tmp.39;
+        %tmp.41 = getm $.Toybox.Graphics;
+        %tmp.42 = getv %tmp.41 :FONT_SMALL;
+        %tmp.44 = getv ? :mArrivalTime;
+        %tmp.45 = getm $.Toybox.Graphics;
+        %tmp.46 = getv %tmp.45 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.21 %tmp.22(%tmp.27, %tmp.40, %tmp.42, %tmp.44, %tmp.46);
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 85 8 ]
+        %tmp.47 = lgetv %dc;
+        %tmp.48 = getv function %tmp.47 :setColor;
+        %tmp.49 = getm $.Toybox.Graphics;
+        %tmp.50 = getv %tmp.49 :COLOR_WHITE;
+        %tmp.52 = getv ? :mRowBgColor;
+        invoke %tmp.47 %tmp.48(%tmp.50, %tmp.52);
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 87 8 ]
+        %tmp.53 = lgetv %dc;
+        %tmp.54 = getv function %tmp.53 :drawText;
+        %tmp.56 = lgetv %boundaryTrainNameArrivalTime.1;
+        %tmp.58 = getv ? :OUTER_TIME_SIZE;
+        %tmp.59 = sub %tmp.56 %tmp.58;
+        %tmp.60 = lgetv %dc;
+        %tmp.61 = getv function %tmp.60 :getWidth;
+        %tmp.62 = invoke %tmp.60 %tmp.61();
+        %tmp.63 = 6;
+        %tmp.64 = div %tmp.62 %tmp.63;
+        %tmp.66 = getv ? :OUTER_TIME_SIZE;
+        %tmp.67 = 2;
+        %tmp.68 = mul %tmp.66 %tmp.67;
+        %tmp.69 = add %tmp.64 %tmp.68;
+        %tmp.71 = getv ? :mRowHeight;
+        %tmp.73 = getv ? :mRowNb;
+        %tmp.74 = mul %tmp.71 %tmp.73;
+        %tmp.75 = add %tmp.69 %tmp.74;
+        %tmp.76 = getm $.Toybox.Graphics;
+        %tmp.77 = getv %tmp.76 :FONT_SMALL;
+        %tmp.79 = getv ? :mName;
+        %tmp.80 = getm $.Toybox.Graphics;
+        %tmp.81 = getv %tmp.80 :TEXT_JUSTIFY_RIGHT;
+        invoke %tmp.53 %tmp.54(%tmp.59, %tmp.75, %tmp.77, %tmp.79, %tmp.81);
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 89 8 ]
+        %tmp.82 = lgetv %dc;
+        %tmp.83 = getv function %tmp.82 :drawText;
+        %tmp.85 = lgetv %boundaryTrainNameArrivalTime.1;
+        %tmp.87 = getv ? :OUTER_TIME_SIZE;
+        %tmp.88 = sub %tmp.85 %tmp.87;
+        %tmp.89 = lgetv %dc;
+        %tmp.90 = getv function %tmp.89 :getWidth;
+        %tmp.91 = invoke %tmp.89 %tmp.90();
+        %tmp.92 = 6;
+        %tmp.93 = div %tmp.91 %tmp.92;
+        %tmp.95 = getv ? :OUTER_TIME_SIZE;
+        %tmp.96 = 2;
+        %tmp.97 = mul %tmp.95 %tmp.96;
+        %tmp.98 = add %tmp.93 %tmp.97;
+        %tmp.100 = getv ? :FONT_SMALL_HEIGHT;
+        %tmp.101 = add %tmp.98 %tmp.100;
+        %tmp.103 = getv ? :mRowHeight;
+        %tmp.105 = getv ? :mRowNb;
+        %tmp.106 = mul %tmp.103 %tmp.105;
+        %tmp.107 = add %tmp.101 %tmp.106;
+        %tmp.108 = getm $.Toybox.Graphics;
+        %tmp.109 = getv %tmp.108 :FONT_XTINY;
+        %tmp.111 = getv ? :mDelay;
+        %tmp.112 = getm $.Toybox.Graphics;
+        %tmp.113 = getv %tmp.112 :TEXT_JUSTIFY_RIGHT;
+        invoke %tmp.82 %tmp.83(%tmp.88, %tmp.107, %tmp.109, %tmp.111, %tmp.113);
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 91 8 ]
+        [ "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_78_44_101_4_start" "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_78_44_101_4_stop" ]
+        %base_positionX.2 = local;
+        %tmp.114 = lgetv %dc;
+        %tmp.115 = getv function %tmp.114 :getWidth;
+        %tmp.116 = invoke %tmp.114 %tmp.115();
+        %tmp.117 = 4;
+        %tmp.118 = div %tmp.116 %tmp.117;
+        %tmp.119 = 2.3;
+        %tmp.120 = mul %tmp.118 %tmp.119;
+        lputv %base_positionX.2 %tmp.120;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 92 8 ]
+        %tmp.121 = lgetv %dc;
+        %tmp.122 = getv function %tmp.121 :setClip;
+        %tmp.124 = lgetv %base_positionX.2;
+        %tmp.125 = lgetv %dc;
+        %tmp.126 = getv function %tmp.125 :getWidth;
+        %tmp.127 = invoke %tmp.125 %tmp.126();
+        %tmp.128 = 6;
+        %tmp.129 = div %tmp.127 %tmp.128;
+        %tmp.130 = 5;
+        %tmp.131 = add %tmp.129 %tmp.130;
+        %tmp.133 = getv ? :mRowHeight;
+        %tmp.135 = getv ? :mRowNb;
+        %tmp.136 = mul %tmp.133 %tmp.135;
+        %tmp.137 = add %tmp.131 %tmp.136;
+        %tmp.138 = lgetv %dc;
+        %tmp.139 = getv function %tmp.138 :getWidth;
+        %tmp.140 = invoke %tmp.138 %tmp.139();
+        %tmp.142 = getv ? :FONT_TINY_HEIGHT;
+        invoke %tmp.121 %tmp.122(%tmp.124, %tmp.137, %tmp.140, %tmp.142);
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 93 8 ]
+        %tmp.143 = lgetv %dc;
+        %tmp.144 = getv function %tmp.143 :drawText;
+        %tmp.146 = lgetv %base_positionX.2;
+        %tmp.148 = getv ? :mDestinationCurrentPosX;
+        %tmp.149 = sub %tmp.146 %tmp.148;
+        %tmp.150 = lgetv %dc;
+        %tmp.151 = getv function %tmp.150 :getWidth;
+        %tmp.152 = invoke %tmp.150 %tmp.151();
+        %tmp.153 = 6;
+        %tmp.154 = div %tmp.152 %tmp.153;
+        %tmp.155 = 5;
+        %tmp.156 = add %tmp.154 %tmp.155;
+        %tmp.158 = getv ? :mRowHeight;
+        %tmp.160 = getv ? :mRowNb;
+        %tmp.161 = mul %tmp.158 %tmp.160;
+        %tmp.162 = add %tmp.156 %tmp.161;
+        %tmp.163 = getm $.Toybox.Graphics;
+        %tmp.164 = getv %tmp.163 :FONT_TINY;
+        %tmp.166 = getv ? :mDestination;
+        %tmp.167 = getm $.Toybox.Graphics;
+        %tmp.168 = getv %tmp.167 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.143 %tmp.144(%tmp.149, %tmp.162, %tmp.164, %tmp.166, %tmp.168);
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 94 8 ]
+        %tmp.169 = lgetv %dc;
+        %tmp.170 = getv function %tmp.169 :clearClip;
+        invoke %tmp.169 %tmp.170();
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 95 8 ]
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_95_8_99_8_if_stmt:
+        %tmp.172 = getv ? :mDestinationCurrentPosX;
+        %tmp.174 = getv ? :FONT_TINY_LETTER_WIDTH;
+        %tmp.176 = getv ? :mDestination;
+        %tmp.177 = getv function %tmp.176 :length;
+        %tmp.178 = invoke %tmp.176 %tmp.177();
+        %tmp.179 = mul %tmp.174 %tmp.178;
+        %tmp.180 = lgetv %dc;
+        %tmp.181 = getv function %tmp.180 :getWidth;
+        %tmp.182 = invoke %tmp.180 %tmp.181();
+        %tmp.183 = 2;
+        %tmp.184 = div %tmp.182 %tmp.183;
+        %tmp.185 = sub %tmp.179 %tmp.184;
+        %tmp.186 = 10;
+        %tmp.187 = sub %tmp.185 %tmp.186;
+        %tmp.188 = gt %tmp.172 %tmp.187;
+        bf %tmp.188 @C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_95_8_99_8_if_false;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_95_8_99_8_if_true:
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_95_108_97_8_start:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 96 12 ]
+        %tmp.189 = 0;
+        putv self :mDestinationCurrentPosX %tmp.189;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_95_108_97_8_stop:
+        goto @C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_95_8_99_8_if_end;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_95_8_99_8_if_false:
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_97_15_99_8_start:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 98 12 ]
+        %tmp.190 = getv self :mDestinationCurrentPosX;
+        %tmp.191 = 1;
+        %tmp.192 = add %tmp.190 %tmp.191;
+        putv self :mDestinationCurrentPosX dup %tmp.192;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_97_15_99_8_stop:
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_95_8_99_8_if_end:
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_78_44_101_4_stop:
+    }
+}
+[ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 105; ]
+class WebRequestView extends WatchUi.View{
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 105; ]
+    <init> {
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 111 16 ]
+        %tmp.194 = 3;
+        %tmp.193 = newa %tmp.194;
+        putv self :trains %tmp.193;
+    }
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 105; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 106; @position = 16; ]
+    private
+    var _message as String = "Press menu or\nselect button";
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 107; @position = 16; ]
+    private
+    var innerTime;
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 108; @position = 16; ]
+    private
+    var outerTime;
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 109; @position = 16; ]
+    private
+    var innerStation;
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 110; @position = 16; ]
+    private
+    var outerStation;
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 111; @position = 16; ]
+    private
+    var trains;
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 112; @position = 16; ]
+    private
+    var updateTimer;
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 113; @position = 16; ]
+    private
+    var appState;
+    //! Constructor
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 116; ]
+    public
+    function initialize() as Void {
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_116_33_120_4_start:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 117 8 ]
+        %tmp.1 = getm $.Toybox.WatchUi;
+        %tmp.2 = getv %tmp.1 :View;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 118 8 ]
+        %tmp.7 = getv ? :Timer;
+        %tmp.8 = getv function ? %tmp.7 :Timer;
+        %tmp.4 = newc %tmp.8 ();
+        putv self :updateTimer %tmp.4;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 119 8 ]
+        %tmp.10 = getv ? :ChoosingModeOfTransport;
+        putv self :appState %tmp.10;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_116_33_120_4_stop:
+    }
+    //! Load your resources here
+    //! @param dc Device context
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 124; ]
+    public
+    function onLayout(dc as Dc) as Void {
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_124_47_137_4_start:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 125 8 ]
+        [ "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_124_47_137_4_start" "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_124_47_137_4_stop" ]
+        %width_div6.1 = local;
+        %tmp.1 = lgetv %dc;
+        %tmp.2 = getv function %tmp.1 :getWidth;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = 6;
+        %tmp.5 = div %tmp.3 %tmp.4;
+        lputv %width_div6.1 %tmp.5;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 126 8 ]
+        [ "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_124_47_137_4_start" "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_124_47_137_4_stop" ]
+        %width_div4.2 = local;
+        %tmp.6 = lgetv %dc;
+        %tmp.7 = getv function %tmp.6 :getWidth;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.9 = 4;
+        %tmp.10 = div %tmp.8 %tmp.9;
+        lputv %width_div4.2 %tmp.10;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 127 8 ]
+        [ "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_124_47_137_4_start" "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_124_47_137_4_stop" ]
+        %trainHeight.3 = local;
+        %tmp.12 = lgetv %width_div4.2;
+        %tmp.14 = getv ? :OUTER_TIME_SIZE;
+        %tmp.15 = 2;
+        %tmp.16 = mul %tmp.14 %tmp.15;
+        %tmp.17 = sub %tmp.12 %tmp.16;
+        lputv %trainHeight.3 %tmp.17;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 128 8 ]
+        %tmp.21 = getv ? :CustomRoundedRectangle;
+        %tmp.23 = lgetv %width_div4.2;
+        %tmp.24 = 0;
+        %tmp.26 = lgetv %width_div6.1;
+        %tmp.27 = 3;
+        %tmp.28 = mul %tmp.26 %tmp.27;
+        %tmp.30 = getv ? :OUTER_TIME_SIZE;
+        %tmp.31 = 2;
+        %tmp.32 = mul %tmp.30 %tmp.31;
+        %tmp.33 = add %tmp.28 %tmp.32;
+        %tmp.35 = lgetv %width_div6.1;
+        %tmp.36 = 20;
+        %tmp.37 = getm $.Toybox.Graphics;
+        %tmp.38 = getv %tmp.37 :COLOR_WHITE;
+        %tmp.18 = newc %tmp.21 (%tmp.23, %tmp.24, %tmp.33, %tmp.35, %tmp.36, %tmp.38);
+        putv self :outerTime %tmp.18;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 129 8 ]
+        %tmp.42 = getv ? :CustomRoundedRectangle;
+        %tmp.44 = lgetv %width_div4.2;
+        %tmp.46 = getv ? :OUTER_TIME_SIZE;
+        %tmp.47 = add %tmp.44 %tmp.46;
+        %tmp.48 = 0;
+        %tmp.50 = lgetv %width_div6.1;
+        %tmp.51 = 3;
+        %tmp.52 = mul %tmp.50 %tmp.51;
+        %tmp.54 = lgetv %width_div6.1;
+        %tmp.56 = getv ? :OUTER_TIME_SIZE;
+        %tmp.57 = sub %tmp.54 %tmp.56;
+        %tmp.58 = 20;
+        %tmp.59 = 0x000080;
+        %tmp.39 = newc %tmp.42 (%tmp.47, %tmp.48, %tmp.52, %tmp.57, %tmp.58, %tmp.59);
+        putv self :innerTime %tmp.39;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 132 8 ]
+        %tmp.63 = getv ? :CustomRoundedRectangle;
+        %tmp.65 = lgetv %width_div4.2;
+        %tmp.66 = lgetv %dc;
+        %tmp.67 = getv function %tmp.66 :getHeight;
+        %tmp.68 = invoke %tmp.66 %tmp.67();
+        %tmp.70 = getv ? :FONT_TINY_HEIGHT;
+        %tmp.71 = sub %tmp.68 %tmp.70;
+        %tmp.73 = getv ? :OUTER_TIME_SIZE;
+        %tmp.74 = sub %tmp.71 %tmp.73;
+        %tmp.76 = lgetv %width_div6.1;
+        %tmp.77 = 3;
+        %tmp.78 = mul %tmp.76 %tmp.77;
+        %tmp.80 = getv ? :OUTER_TIME_SIZE;
+        %tmp.81 = 2;
+        %tmp.82 = mul %tmp.80 %tmp.81;
+        %tmp.83 = add %tmp.78 %tmp.82;
+        %tmp.85 = lgetv %width_div6.1;
+        %tmp.86 = 20;
+        %tmp.87 = getm $.Toybox.Graphics;
+        %tmp.88 = getv %tmp.87 :COLOR_WHITE;
+        %tmp.60 = newc %tmp.63 (%tmp.65, %tmp.74, %tmp.83, %tmp.85, %tmp.86, %tmp.88);
+        putv self :outerStation %tmp.60;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 133 8 ]
+        %tmp.92 = getv ? :CustomRoundedRectangle;
+        %tmp.94 = lgetv %width_div4.2;
+        %tmp.96 = getv ? :OUTER_TIME_SIZE;
+        %tmp.97 = add %tmp.94 %tmp.96;
+        %tmp.98 = lgetv %dc;
+        %tmp.99 = getv function %tmp.98 :getHeight;
+        %tmp.100 = invoke %tmp.98 %tmp.99();
+        %tmp.102 = getv ? :FONT_TINY_HEIGHT;
+        %tmp.103 = sub %tmp.100 %tmp.102;
+        %tmp.105 = lgetv %width_div6.1;
+        %tmp.106 = 3;
+        %tmp.107 = mul %tmp.105 %tmp.106;
+        %tmp.109 = lgetv %width_div6.1;
+        %tmp.111 = getv ? :OUTER_TIME_SIZE;
+        %tmp.112 = sub %tmp.109 %tmp.111;
+        %tmp.113 = 20;
+        %tmp.114 = 0x000080;
+        %tmp.89 = newc %tmp.92 (%tmp.97, %tmp.103, %tmp.107, %tmp.112, %tmp.113, %tmp.114);
+        putv self :innerStation %tmp.89;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 134 8 ]
+        %tmp.115 = getv self :trains;
+        %tmp.119 = getv ? :IncomingTrain;
+        %tmp.120 = 0;
+        %tmp.122 = lgetv %trainHeight.3;
+        %tmp.123 = lgetv %dc;
+        %tmp.124 = getv function %tmp.123 :getWidth;
+        %tmp.125 = invoke %tmp.123 %tmp.124();
+        %tmp.126 = 0x0c5da5;
+        %tmp.116 = newc %tmp.119 (%tmp.120, %tmp.122, %tmp.125, %tmp.126);
+        %tmp.127 = 0;
+        aputv %tmp.115 %tmp.127 %tmp.116;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 135 8 ]
+        %tmp.128 = getv self :trains;
+        %tmp.132 = getv ? :IncomingTrain;
+        %tmp.133 = 1;
+        %tmp.135 = lgetv %trainHeight.3;
+        %tmp.136 = lgetv %dc;
+        %tmp.137 = getv function %tmp.136 :getWidth;
+        %tmp.138 = invoke %tmp.136 %tmp.137();
+        %tmp.139 = 0x001b33;
+        %tmp.129 = newc %tmp.132 (%tmp.133, %tmp.135, %tmp.138, %tmp.139);
+        %tmp.140 = 1;
+        aputv %tmp.128 %tmp.140 %tmp.129;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 136 8 ]
+        %tmp.141 = getv self :trains;
+        %tmp.145 = getv ? :IncomingTrain;
+        %tmp.146 = 2;
+        %tmp.148 = lgetv %trainHeight.3;
+        %tmp.149 = lgetv %dc;
+        %tmp.150 = getv function %tmp.149 :getWidth;
+        %tmp.151 = invoke %tmp.149 %tmp.150();
+        %tmp.152 = 0x0c5da5;
+        %tmp.142 = newc %tmp.145 (%tmp.146, %tmp.148, %tmp.151, %tmp.152);
+        %tmp.153 = 2;
+        aputv %tmp.141 %tmp.153 %tmp.142;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_124_47_137_4_stop:
+    }
+    //! Restore the state of the app and prepare the view to be shown
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 140; ]
+    public
+    function onShow() as Void {
+    }
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 143; ]
+    function triggerUpdate() {
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_143_29_145_4_start:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 144 8 ]
+        %tmp.1 = getm $.Toybox.WatchUi;
+        %tmp.2 = getv function %tmp.1 :requestUpdate;
+        invoke %tmp.1 %tmp.2();
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_143_29_145_4_stop:
+    }
+    //! Update the view
+    //! @param dc Device Context
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 149; ]
+    public
+    function onUpdate(dc as Dc) as Void {
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_149_47_170_4_start:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 150 8 ]
+        %tmp.1 = lgetv %dc;
+        %tmp.2 = getv function %tmp.1 :setColor;
+        %tmp.3 = getm $.Toybox.Graphics;
+        %tmp.4 = getv %tmp.3 :COLOR_WHITE;
+        %tmp.5 = getm $.Toybox.Graphics;
+        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 151 8 ]
+        %tmp.7 = lgetv %dc;
+        %tmp.8 = getv function %tmp.7 :clear;
+        invoke %tmp.7 %tmp.8();
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 152 8 ]
+        %tmp.10 = getv ? :outerTime;
+        %tmp.11 = getv function %tmp.10 :print;
+        %tmp.13 = lgetv %dc;
+        invoke %tmp.10 %tmp.11(%tmp.13);
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 153 8 ]
+        %tmp.15 = getv ? :innerTime;
+        %tmp.16 = getv function %tmp.15 :print;
+        %tmp.18 = lgetv %dc;
+        invoke %tmp.15 %tmp.16(%tmp.18);
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 155 8 ]
+        %tmp.19 = lgetv %dc;
+        %tmp.20 = getv function %tmp.19 :setColor;
+        %tmp.21 = getm $.Toybox.Graphics;
+        %tmp.22 = getv %tmp.21 :COLOR_WHITE;
+        %tmp.23 = 0x000080;
+        invoke %tmp.19 %tmp.20(%tmp.22, %tmp.23);
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 156 8 ]
+        [ "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_149_47_170_4_start" "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_149_47_170_4_stop" ]
+        %today.1 = local;
+        %tmp.24 = getm $.Toybox.Time.Gregorian;
+        %tmp.25 = getv function %tmp.24 :info;
+        %tmp.26 = getm $.Toybox.Time;
+        %tmp.27 = getv function %tmp.26 :now;
+        %tmp.28 = invoke %tmp.26 %tmp.27();
+        %tmp.29 = getm $.Toybox.Time;
+        %tmp.30 = getv %tmp.29 :FORMAT_MEDIUM;
+        %tmp.31 = invoke %tmp.24 %tmp.25(%tmp.28, %tmp.30);
+        lputv %today.1 %tmp.31;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 157 8 ]
+        [ "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_149_47_170_4_start" "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_149_47_170_4_stop" ]
+        %displayedTime.2 = local;
+        %tmp.32 = lgetv %today.1;
+        %tmp.33 = getv %tmp.32 :hour;
+        %tmp.34 = getv function %tmp.33 :toString;
+        %tmp.35 = invoke %tmp.33 %tmp.34();
+        %tmp.36 = ":";
+        %tmp.37 = add %tmp.35 %tmp.36;
+        %tmp.38 = self;
+        %tmp.39 = getv function %tmp.38 :minToString;
+        %tmp.40 = lgetv %today.1;
+        %tmp.41 = getv %tmp.40 :min;
+        %tmp.42 = invoke %tmp.38 %tmp.39(%tmp.41);
+        %tmp.43 = add %tmp.37 %tmp.42;
+        lputv %displayedTime.2 %tmp.43;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 158 8 ]
+        %tmp.44 = lgetv %dc;
+        %tmp.45 = getv function %tmp.44 :drawText;
+        %tmp.46 = lgetv %dc;
+        %tmp.47 = getv function %tmp.46 :getWidth;
+        %tmp.48 = invoke %tmp.46 %tmp.47();
+        %tmp.49 = 2;
+        %tmp.50 = div %tmp.48 %tmp.49;
+        %tmp.51 = 5;
+        %tmp.52 = getm $.Toybox.Graphics;
+        %tmp.53 = getv %tmp.52 :FONT_SMALL;
+        %tmp.55 = lgetv %displayedTime.2;
+        %tmp.56 = getm $.Toybox.Graphics;
+        %tmp.57 = getv %tmp.56 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.44 %tmp.45(%tmp.50, %tmp.51, %tmp.53, %tmp.55, %tmp.57);
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 160 8 ]
+        %tmp.58 = lgetv %dc;
+        %tmp.59 = getv function %tmp.58 :setColor;
+        %tmp.60 = getm $.Toybox.Graphics;
+        %tmp.61 = getv %tmp.60 :COLOR_WHITE;
+        %tmp.62 = getm $.Toybox.Graphics;
+        %tmp.63 = getv %tmp.62 :COLOR_BLACK;
+        invoke %tmp.58 %tmp.59(%tmp.61, %tmp.63);
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 161 8 ]
+        %tmp.65 = getv ? :outerStation;
+        %tmp.66 = getv function %tmp.65 :print;
+        %tmp.68 = lgetv %dc;
+        invoke %tmp.65 %tmp.66(%tmp.68);
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 162 8 ]
+        %tmp.70 = getv ? :innerStation;
+        %tmp.71 = getv function %tmp.70 :print;
+        %tmp.73 = lgetv %dc;
+        invoke %tmp.70 %tmp.71(%tmp.73);
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 163 8 ]
+        %tmp.74 = lgetv %dc;
+        %tmp.75 = getv function %tmp.74 :setColor;
+        %tmp.76 = getm $.Toybox.Graphics;
+        %tmp.77 = getv %tmp.76 :COLOR_WHITE;
+        %tmp.78 = 0x000080;
+        invoke %tmp.74 %tmp.75(%tmp.77, %tmp.78);
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 165 8 ]
+        %tmp.79 = lgetv %dc;
+        %tmp.80 = getv function %tmp.79 :drawText;
+        %tmp.81 = lgetv %dc;
+        %tmp.82 = getv function %tmp.81 :getWidth;
+        %tmp.83 = invoke %tmp.81 %tmp.82();
+        %tmp.84 = 2;
+        %tmp.85 = div %tmp.83 %tmp.84;
+        %tmp.86 = lgetv %dc;
+        %tmp.87 = getv function %tmp.86 :getHeight;
+        %tmp.88 = invoke %tmp.86 %tmp.87();
+        %tmp.90 = getv ? :FONT_TINY_HEIGHT;
+        %tmp.91 = sub %tmp.88 %tmp.90;
+        %tmp.92 = getm $.Toybox.Graphics;
+        %tmp.93 = getv %tmp.92 :FONT_TINY;
+        %tmp.94 = "ARK";
+        %tmp.95 = getm $.Toybox.Graphics;
+        %tmp.96 = getv %tmp.95 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.79 %tmp.80(%tmp.85, %tmp.91, %tmp.93, %tmp.94, %tmp.96);
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 166 8 ]
+        for @C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_166_8_168_8_for_test @C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_166_8_168_8_for_incr @C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_166_8_168_8_for_end;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_166_8_168_8_for_init:
+        [ "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_166_8_168_8_for_begin" "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_166_8_168_8_for_end" ]
+        %i.3 = local;
+        %tmp.97 = 0;
+        lputv %i.3 %tmp.97;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_166_8_168_8_for_test:
+        %tmp.99 = lgetv %i.3;
+        %tmp.100 = 3;
+        %tmp.101 = lt %tmp.99 %tmp.100;
+        bf %tmp.101 @C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_166_8_168_8_for_end;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_166_8_168_8_for_begin:
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_166_34_168_8_start:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 167 12 ]
+        %tmp.103 = getv ? :trains;
+        %tmp.105 = lgetv %i.3;
+        %tmp.106 = agetv %tmp.103 %tmp.105;
+        %tmp.107 = getv function %tmp.106 :print;
+        %tmp.109 = lgetv %dc;
+        invoke %tmp.106 %tmp.107(%tmp.109);
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_166_34_168_8_stop:
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_166_8_168_8_for_incr:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 166 ]
+        %tmp.112 = lgetv %i.3;
+        %tmp.113 = add %tmp.112 1;
+        lputv %i.3 %tmp.113;
+        goto @C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_166_8_168_8_for_test;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_166_8_168_8_for_end:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 169 8 ]
+        %tmp.115 = getv ? :updateTimer;
+        %tmp.116 = getv function %tmp.115 :start;
+        %tmp.117 = self;
+        %tmp.118 = getv function %tmp.117 :method;
+        %tmp.120 = const :triggerUpdate;
+        %tmp.121 = invoke %tmp.117 %tmp.118(%tmp.120);
+        %tmp.122 = 50;
+        %tmp.123 = false;
+        invoke %tmp.115 %tmp.116(%tmp.121, %tmp.122, %tmp.123);
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_149_47_170_4_stop:
+    }
+    //! Called when this View is removed from the screen. Save the
+    //! state of your app here.
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 174; ]
+    public
+    function onHide() as Void {
+    }
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 177; ]
+    private
+    function compute_waiting_time(hour as Number, min as Number) as Number {
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_177_83_183_4_start:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 178 8 ]
+        [ "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_177_83_183_4_start" "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_177_83_183_4_stop" ]
+        %today.1 = local;
+        %tmp.1 = getm $.Toybox.Time.Gregorian;
+        %tmp.2 = getv function %tmp.1 :info;
+        %tmp.3 = getm $.Toybox.Time;
+        %tmp.4 = getv function %tmp.3 :now;
+        %tmp.5 = invoke %tmp.3 %tmp.4();
+        %tmp.6 = getm $.Toybox.Time;
+        %tmp.7 = getv %tmp.6 :FORMAT_MEDIUM;
+        %tmp.8 = invoke %tmp.1 %tmp.2(%tmp.5, %tmp.7);
+        lputv %today.1 %tmp.8;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 179 8 ]
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_179_8_181_8_if_stmt:
+        %tmp.10 = lgetv %hour;
+        %tmp.11 = 23;
+        %tmp.12 = eq %tmp.10 %tmp.11;
+        bf %tmp.12 @C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_179_8_181_8_if_end;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_179_8_181_8_if_true:
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_179_23_181_8_start:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 180 12 ]
+        %tmp.13 = -1;
+        lputv %hour %tmp.13;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_179_23_181_8_stop:
+        goto @C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_179_8_181_8_if_end;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_179_8_181_8_if_end:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 182 8 ]
+        %tmp.15 = lgetv %hour;
+        %tmp.16 = 1;
+        %tmp.17 = add %tmp.15 %tmp.16;
+        %tmp.18 = lgetv %today.1;
+        %tmp.19 = getv %tmp.18 :hour;
+        %tmp.20 = sub %tmp.17 %tmp.19;
+        %tmp.21 = 60;
+        %tmp.22 = mul %tmp.20 %tmp.21;
+        %tmp.24 = lgetv %min;
+        %tmp.25 = lgetv %today.1;
+        %tmp.26 = getv %tmp.25 :min;
+        %tmp.27 = sub %tmp.24 %tmp.26;
+        %tmp.28 = add %tmp.22 %tmp.27;
+        ret %tmp.28;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_177_83_183_4_stop:
+    }
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 185; ]
+    private
+    function compute_delay(expectedArrivalTime as String, aimedArrivalTime as String) {
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_185_94_198_4_start:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 186 8 ]
+        [ "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_185_94_198_4_start" "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_185_94_198_4_stop" ]
+        %expectedHour.1 = local;
+        %tmp.1 = lgetv %expectedArrivalTime;
+        %tmp.2 = getv function %tmp.1 :substring;
+        %tmp.3 = 11;
+        %tmp.4 = 13;
+        %tmp.5 = invoke %tmp.1 %tmp.2(%tmp.3, %tmp.4);
+        %tmp.6 = getv function %tmp.5 :toNumber;
+        %tmp.7 = invoke %tmp.5 %tmp.6();
+        lputv %expectedHour.1 %tmp.7;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 187 8 ]
+        [ "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_185_94_198_4_start" "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_185_94_198_4_stop" ]
+        %expectedMin.2 = local;
+        %tmp.8 = lgetv %expectedArrivalTime;
+        %tmp.9 = getv function %tmp.8 :substring;
+        %tmp.10 = 14;
+        %tmp.11 = 16;
+        %tmp.12 = invoke %tmp.8 %tmp.9(%tmp.10, %tmp.11);
+        %tmp.13 = getv function %tmp.12 :toNumber;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        lputv %expectedMin.2 %tmp.14;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 188 8 ]
+        [ "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_185_94_198_4_start" "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_185_94_198_4_stop" ]
+        %expectedSec.3 = local;
+        %tmp.15 = lgetv %expectedArrivalTime;
+        %tmp.16 = getv function %tmp.15 :substring;
+        %tmp.17 = 17;
+        %tmp.18 = 19;
+        %tmp.19 = invoke %tmp.15 %tmp.16(%tmp.17, %tmp.18);
+        %tmp.20 = getv function %tmp.19 :toNumber;
+        %tmp.21 = invoke %tmp.19 %tmp.20();
+        lputv %expectedSec.3 %tmp.21;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 189 8 ]
+        [ "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_185_94_198_4_start" "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_185_94_198_4_stop" ]
+        %aimedHour.4 = local;
+        %tmp.22 = lgetv %aimedArrivalTime;
+        %tmp.23 = getv function %tmp.22 :substring;
+        %tmp.24 = 11;
+        %tmp.25 = 13;
+        %tmp.26 = invoke %tmp.22 %tmp.23(%tmp.24, %tmp.25);
+        %tmp.27 = getv function %tmp.26 :toNumber;
+        %tmp.28 = invoke %tmp.26 %tmp.27();
+        lputv %aimedHour.4 %tmp.28;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 190 8 ]
+        [ "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_185_94_198_4_start" "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_185_94_198_4_stop" ]
+        %aimedMin.5 = local;
+        %tmp.29 = lgetv %aimedArrivalTime;
+        %tmp.30 = getv function %tmp.29 :substring;
+        %tmp.31 = 14;
+        %tmp.32 = 16;
+        %tmp.33 = invoke %tmp.29 %tmp.30(%tmp.31, %tmp.32);
+        %tmp.34 = getv function %tmp.33 :toNumber;
+        %tmp.35 = invoke %tmp.33 %tmp.34();
+        lputv %aimedMin.5 %tmp.35;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 191 8 ]
+        [ "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_185_94_198_4_start" "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_185_94_198_4_stop" ]
+        %aimedSec.6 = local;
+        %tmp.36 = lgetv %aimedArrivalTime;
+        %tmp.37 = getv function %tmp.36 :substring;
+        %tmp.38 = 17;
+        %tmp.39 = 19;
+        %tmp.40 = invoke %tmp.36 %tmp.37(%tmp.38, %tmp.39);
+        %tmp.41 = getv function %tmp.40 :toNumber;
+        %tmp.42 = invoke %tmp.40 %tmp.41();
+        lputv %aimedSec.6 %tmp.42;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 192 8 ]
+        [ "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_185_94_198_4_start" "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_185_94_198_4_stop" ]
+        %delay.7 = local;
+        %tmp.44 = lgetv %expectedHour.1;
+        %tmp.45 = 3600;
+        %tmp.46 = mul %tmp.44 %tmp.45;
+        %tmp.48 = lgetv %expectedMin.2;
+        %tmp.49 = 60;
+        %tmp.50 = mul %tmp.48 %tmp.49;
+        %tmp.51 = add %tmp.46 %tmp.50;
+        %tmp.53 = lgetv %expectedSec.3;
+        %tmp.54 = add %tmp.51 %tmp.53;
+        %tmp.56 = lgetv %aimedHour.4;
+        %tmp.57 = 3600;
+        %tmp.58 = mul %tmp.56 %tmp.57;
+        %tmp.60 = lgetv %aimedMin.5;
+        %tmp.61 = 60;
+        %tmp.62 = mul %tmp.60 %tmp.61;
+        %tmp.63 = add %tmp.58 %tmp.62;
+        %tmp.65 = lgetv %aimedSec.6;
+        %tmp.66 = add %tmp.63 %tmp.65;
+        %tmp.67 = sub %tmp.54 %tmp.66;
+        lputv %delay.7 %tmp.67;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 193 8 ]
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_193_8_197_8_if_stmt:
+        %tmp.69 = lgetv %delay.7;
+        %tmp.70 = 60;
+        %tmp.71 = lt %tmp.69 %tmp.70;
+        bf %tmp.71 @C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_193_8_197_8_if_false;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_193_8_197_8_if_true:
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_193_22_195_8_start:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 194 12 ]
+        %tmp.72 = "on time";
+        ret %tmp.72;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_193_22_195_8_stop:
+        goto @C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_193_8_197_8_if_end;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_193_8_197_8_if_false:
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_195_15_197_8_start:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 196 12 ]
+        %tmp.73 = "+";
+        %tmp.75 = lgetv %delay.7;
+        %tmp.76 = 60;
+        %tmp.77 = div %tmp.75 %tmp.76;
+        %tmp.78 = getv function %tmp.77 :toString;
+        %tmp.79 = invoke %tmp.77 %tmp.78();
+        %tmp.80 = add %tmp.73 %tmp.79;
+        %tmp.81 = " mins";
+        %tmp.82 = add %tmp.80 %tmp.81;
+        ret %tmp.82;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_195_15_197_8_stop:
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_193_8_197_8_if_end:
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_185_94_198_4_stop:
+    }
+    //! Show the result or status of the web request
+    //! @param args Data from the web request, or error message
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 202; ]
+    public
+    function onReceive(args as Dictionary or String or Null) as Void {
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_202_76_232_4_start:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 203 8 ]
+        %tmp.2 = getv ? :System;
+        %tmp.3 = getv function %tmp.2 :println;
+        %tmp.5 = lgetv %args;
+        invoke %tmp.2 %tmp.3(%tmp.5);
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 204 8 ]
+        %tmp.6 = "";
+        putv self :_message %tmp.6;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 205 8 ]
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_205_8_230_8_if_stmt:
+        %tmp.8 = lgetv %args;
+        %tmp.10 = getv ? :String;
+        %tmp.11 = isa %tmp.8 %tmp.10;
+        bf %tmp.11 @C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_205_8_230_8_if_false;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_205_8_230_8_if_true:
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_205_36_207_8_start:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 206 12 ]
+        %tmp.12 = self;
+        %tmp.13 = getv function %tmp.12 :updateStateAndMenu;
+        %tmp.15 = lgetv %args;
+        %tmp.16 = as %tmp.15 { (String) };
+        invoke %tmp.12 %tmp.13(%tmp.16);
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_205_36_207_8_stop:
+        goto @C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_205_8_230_8_if_end;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_205_8_230_8_if_false:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 207 15 ]
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_207_15_230_8_if_stmt:
+        %tmp.18 = lgetv %args;
+        %tmp.19 = as %tmp.18 { (!String) };
+        %tmp.21 = getv ? :Dictionary;
+        %tmp.22 = isa %tmp.19 %tmp.21;
+        bf %tmp.22 @C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_207_15_230_8_if_end;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_207_15_230_8_if_true:
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_207_47_230_8_start:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 208 12 ]
+        [ "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_207_47_230_8_start" "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_207_47_230_8_stop" ]
+        %incoming_trains.1 = local;
+        %tmp.24 = lgetv %args;
+        %tmp.25 = as %tmp.24 { (Dictionary) && (!String) };
+        %tmp.26 = "Siri";
+        %tmp.27 = agetv %tmp.25 %tmp.26;
+        %tmp.28 = "ServiceDelivery";
+        %tmp.29 = agetv %tmp.27 %tmp.28;
+        %tmp.30 = "StopMonitoringDelivery";
+        %tmp.31 = agetv %tmp.29 %tmp.30;
+        %tmp.32 = 0;
+        %tmp.33 = agetv %tmp.31 %tmp.32;
+        %tmp.34 = "MonitoredStopVisit";
+        %tmp.35 = agetv %tmp.33 %tmp.34;
+        lputv %incoming_trains.1 %tmp.35;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 209 12 ]
+        [ "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_207_47_230_8_start" "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_207_47_230_8_stop" ]
+        %len_array.2 = local;
+        %tmp.36 = lgetv %incoming_trains.1;
+        %tmp.37 = getv function %tmp.36 :size;
+        %tmp.38 = invoke %tmp.36 %tmp.37();
+        lputv %len_array.2 %tmp.38;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 210 12 ]
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_210_12_212_12_if_stmt:
+        %tmp.40 = lgetv %len_array.2;
+        %tmp.41 = 3;
+        %tmp.42 = gt %tmp.40 %tmp.41;
+        bf %tmp.42 @C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_210_12_212_12_if_end;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_210_12_212_12_if_true:
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_210_30_212_12_start:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 211 16 ]
+        %tmp.43 = 3;
+        lputv %len_array.2 %tmp.43;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_210_30_212_12_stop:
+        goto @C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_210_12_212_12_if_end;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_210_12_212_12_if_end:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 213 12 ]
+        [ "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_207_47_230_8_start" "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_207_47_230_8_stop" ]
+        %hour.3 = local;
+        %tmp.44 = 0;
+        lputv %hour.3 %tmp.44;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 214 12 ]
+        [ "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_207_47_230_8_start" "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_207_47_230_8_stop" ]
+        %min.4 = local;
+        %tmp.45 = 0;
+        lputv %min.4 %tmp.45;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 215 12 ]
+        [ "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_207_47_230_8_start" "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_207_47_230_8_stop" ]
+        %name.5 = local;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 216 12 ]
+        [ "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_207_47_230_8_start" "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_207_47_230_8_stop" ]
+        %delay.6 = local;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 217 12 ]
+        [ "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_207_47_230_8_start" "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_207_47_230_8_stop" ]
+        %arrivalTime.7 = local;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 218 12 ]
+        [ "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_207_47_230_8_start" "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_207_47_230_8_stop" ]
+        %destination.8 = local;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 219 12 ]
+        for @C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_219_12_229_12_for_test @C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_219_12_229_12_for_incr @C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_219_12_229_12_for_end;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_219_12_229_12_for_init:
+        [ "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_219_12_229_12_for_begin" "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_219_12_229_12_for_end" ]
+        %i.9 = local;
+        %tmp.46 = 0;
+        lputv %i.9 %tmp.46;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_219_12_229_12_for_test:
+        %tmp.48 = lgetv %i.9;
+        %tmp.50 = lgetv %len_array.2;
+        %tmp.51 = lt %tmp.48 %tmp.50;
+        bf %tmp.51 @C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_219_12_229_12_for_end;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_219_12_229_12_for_begin:
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_219_48_229_12_start:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 220 16 ]
+        %tmp.53 = lgetv %incoming_trains.1;
+        %tmp.55 = lgetv %i.9;
+        %tmp.56 = agetv %tmp.53 %tmp.55;
+        %tmp.57 = "MonitoredVehicleJourney";
+        %tmp.58 = agetv %tmp.56 %tmp.57;
+        %tmp.59 = "MonitoredCall";
+        %tmp.60 = agetv %tmp.58 %tmp.59;
+        %tmp.61 = "ExpectedArrivalTime";
+        %tmp.62 = agetv %tmp.60 %tmp.61;
+        %tmp.63 = getv function %tmp.62 :toString;
+        %tmp.64 = invoke %tmp.62 %tmp.63();
+        %tmp.65 = getv function %tmp.64 :substring;
+        %tmp.66 = 11;
+        %tmp.67 = 13;
+        %tmp.68 = invoke %tmp.64 %tmp.65(%tmp.66, %tmp.67);
+        %tmp.69 = getv function %tmp.68 :toNumber;
+        %tmp.70 = invoke %tmp.68 %tmp.69();
+        lputv %hour.3 %tmp.70;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 221 16 ]
+        %tmp.72 = lgetv %incoming_trains.1;
+        %tmp.74 = lgetv %i.9;
+        %tmp.75 = agetv %tmp.72 %tmp.74;
+        %tmp.76 = "MonitoredVehicleJourney";
+        %tmp.77 = agetv %tmp.75 %tmp.76;
+        %tmp.78 = "MonitoredCall";
+        %tmp.79 = agetv %tmp.77 %tmp.78;
+        %tmp.80 = "ExpectedArrivalTime";
+        %tmp.81 = agetv %tmp.79 %tmp.80;
+        %tmp.82 = getv function %tmp.81 :toString;
+        %tmp.83 = invoke %tmp.81 %tmp.82();
+        %tmp.84 = getv function %tmp.83 :substring;
+        %tmp.85 = 14;
+        %tmp.86 = 16;
+        %tmp.87 = invoke %tmp.83 %tmp.84(%tmp.85, %tmp.86);
+        %tmp.88 = getv function %tmp.87 :toNumber;
+        %tmp.89 = invoke %tmp.87 %tmp.88();
+        lputv %min.4 %tmp.89;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 222 16 ]
+        %tmp.91 = lgetv %incoming_trains.1;
+        %tmp.93 = lgetv %i.9;
+        %tmp.94 = agetv %tmp.91 %tmp.93;
+        %tmp.95 = "MonitoredVehicleJourney";
+        %tmp.96 = agetv %tmp.94 %tmp.95;
+        %tmp.97 = "JourneyNote";
+        %tmp.98 = agetv %tmp.96 %tmp.97;
+        %tmp.99 = 0;
+        %tmp.100 = agetv %tmp.98 %tmp.99;
+        %tmp.101 = "value";
+        %tmp.102 = agetv %tmp.100 %tmp.101;
+        lputv %name.5 %tmp.102;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 223 16 ]
+        %tmp.103 = self;
+        %tmp.104 = getv function %tmp.103 :compute_delay;
+        %tmp.106 = lgetv %incoming_trains.1;
+        %tmp.108 = lgetv %i.9;
+        %tmp.109 = agetv %tmp.106 %tmp.108;
+        %tmp.110 = "MonitoredVehicleJourney";
+        %tmp.111 = agetv %tmp.109 %tmp.110;
+        %tmp.112 = "MonitoredCall";
+        %tmp.113 = agetv %tmp.111 %tmp.112;
+        %tmp.114 = "ExpectedArrivalTime";
+        %tmp.115 = agetv %tmp.113 %tmp.114;
+        %tmp.116 = getv function %tmp.115 :toString;
+        %tmp.117 = invoke %tmp.115 %tmp.116();
+        %tmp.119 = lgetv %incoming_trains.1;
+        %tmp.121 = lgetv %i.9;
+        %tmp.122 = agetv %tmp.119 %tmp.121;
+        %tmp.123 = "MonitoredVehicleJourney";
+        %tmp.124 = agetv %tmp.122 %tmp.123;
+        %tmp.125 = "MonitoredCall";
+        %tmp.126 = agetv %tmp.124 %tmp.125;
+        %tmp.127 = "AimedArrivalTime";
+        %tmp.128 = agetv %tmp.126 %tmp.127;
+        %tmp.129 = getv function %tmp.128 :toString;
+        %tmp.130 = invoke %tmp.128 %tmp.129();
+        %tmp.131 = invoke %tmp.103 %tmp.104(%tmp.117, %tmp.130);
+        lputv %delay.6 %tmp.131;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 225 16 ]
+        %tmp.132 = self;
+        %tmp.133 = getv function %tmp.132 :minToString;
+        %tmp.135 = lgetv %min.4;
+        %tmp.136 = invoke %tmp.132 %tmp.133(%tmp.135);
+        lputv %min.4 %tmp.136;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 226 16 ]
+        %tmp.138 = lgetv %hour.3;
+        %tmp.139 = 1;
+        %tmp.140 = add %tmp.138 %tmp.139;
+        %tmp.141 = getv function %tmp.140 :toString;
+        %tmp.142 = invoke %tmp.140 %tmp.141();
+        %tmp.143 = ":";
+        %tmp.144 = add %tmp.142 %tmp.143;
+        %tmp.146 = lgetv %min.4;
+        %tmp.147 = add %tmp.144 %tmp.146;
+        lputv %arrivalTime.7 %tmp.147;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 227 16 ]
+        %tmp.149 = lgetv %incoming_trains.1;
+        %tmp.151 = lgetv %i.9;
+        %tmp.152 = agetv %tmp.149 %tmp.151;
+        %tmp.153 = "MonitoredVehicleJourney";
+        %tmp.154 = agetv %tmp.152 %tmp.153;
+        %tmp.155 = "DestinationName";
+        %tmp.156 = agetv %tmp.154 %tmp.155;
+        %tmp.157 = 0;
+        %tmp.158 = agetv %tmp.156 %tmp.157;
+        %tmp.159 = "value";
+        %tmp.160 = agetv %tmp.158 %tmp.159;
+        %tmp.161 = getv function %tmp.160 :toString;
+        %tmp.162 = invoke %tmp.160 %tmp.161();
+        lputv %destination.8 %tmp.162;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 228 16 ]
+        %tmp.164 = getv ? :trains;
+        %tmp.166 = lgetv %i.9;
+        %tmp.167 = agetv %tmp.164 %tmp.166;
+        %tmp.168 = getv function %tmp.167 :updateInfo;
+        %tmp.170 = lgetv %name.5;
+        %tmp.172 = lgetv %delay.6;
+        %tmp.174 = lgetv %arrivalTime.7;
+        %tmp.176 = lgetv %destination.8;
+        invoke %tmp.167 %tmp.168(%tmp.170, %tmp.172, %tmp.174, %tmp.176);
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_219_48_229_12_stop:
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_219_12_229_12_for_incr:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 219 ]
+        %tmp.179 = lgetv %i.9;
+        %tmp.180 = add %tmp.179 1;
+        lputv %i.9 %tmp.180;
+        goto @C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_219_12_229_12_for_test;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_219_12_229_12_for_end:
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_207_47_230_8_stop:
+        goto @C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_207_15_230_8_if_end;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_207_15_230_8_if_end:
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_205_8_230_8_if_end:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc" 231 8 ]
+        %tmp.181 = getm $.Toybox.WatchUi;
+        %tmp.182 = getv function %tmp.181 :requestUpdate;
+        invoke %tmp.181 %tmp.182();
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestView_mc_202_76_232_4_stop:
+    }
+}
+[ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestView.mc"; @line = 7; ]
+<init> {
+}

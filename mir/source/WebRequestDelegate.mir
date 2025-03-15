@@ -1,0 +1,153 @@
+[ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestDelegate.mc"; @line = 7; ]
+import Toybox.Communications;
+[ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestDelegate.mc"; @line = 8; ]
+import Toybox.Lang;
+[ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestDelegate.mc"; @line = 9; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestDelegate.mc"; @line = 10; ]
+import Toybox.System;
+[ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestDelegate.mc"; @line = 14; ]
+class WebRequestDelegate extends WatchUi.BehaviorDelegate{
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestDelegate.mc"; @line = 14; ]
+    <init> {
+    }
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestDelegate.mc"; @line = 14; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestDelegate.mc"; @line = 16; @position = 16; ]
+    private
+    var _notify as (callback(args as Dictionary or String or Null) as Void);
+    //! Set up the callback to the view
+    //! @param handler Callback method for when data is received
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestDelegate.mc"; @line = 20; ]
+    public
+    function initialize(handler as (callback(args as Dictionary or String or Null) as Void)) as Void {
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestDelegate_mc_20_96_23_4_start:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestDelegate.mc" 21 8 ]
+        %tmp.1 = getm $.Toybox.WatchUi;
+        %tmp.2 = getv %tmp.1 :BehaviorDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestDelegate.mc" 22 8 ]
+        %tmp.5 = lgetv %handler;
+        putv self :_notify %tmp.5;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestDelegate_mc_20_96_23_4_stop:
+    }
+    //! On a menu event, make a web request
+    //! @return true if handled, false otherwise
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestDelegate.mc"; @line = 27; ]
+    public
+    function onMenu() as Boolean {
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestDelegate_mc_27_40_30_4_start:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestDelegate.mc" 28 8 ]
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :makeRequest;
+        invoke %tmp.1 %tmp.2();
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestDelegate.mc" 29 8 ]
+        %tmp.3 = true;
+        ret %tmp.3;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestDelegate_mc_27_40_30_4_stop:
+    }
+    //! On a select event, make a web request
+    //! @return true if handled, false otherwise
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestDelegate.mc"; @line = 34; ]
+    public
+    function onSelect() as Boolean {
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestDelegate_mc_34_42_37_4_start:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestDelegate.mc" 35 8 ]
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :makeRequest;
+        invoke %tmp.1 %tmp.2();
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestDelegate.mc" 36 8 ]
+        %tmp.3 = true;
+        ret %tmp.3;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestDelegate_mc_34_42_37_4_stop:
+    }
+    //! Make the web request
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestDelegate.mc"; @line = 40; ]
+    private
+    function makeRequest() as Void {
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestDelegate_mc_40_43_57_4_start:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestDelegate.mc" 41 8 ]
+        %tmp.2 = getv ? :_notify;
+        %tmp.3 = getv function %tmp.2 :invoke;
+        %tmp.4 = "Executing\nRequest";
+        invoke %tmp.2 %tmp.3(%tmp.4);
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestDelegate.mc" 43 8 ]
+        [ "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestDelegate_mc_40_43_57_4_start" "C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestDelegate_mc_40_43_57_4_stop" ]
+        %options.1 = local;
+        %tmp.5 = newd 2;
+        %tmp.7 = const :responseType;
+        %tmp.8 = getm $.Toybox.Communications;
+        %tmp.9 = getv %tmp.8 :HTTP_RESPONSE_CONTENT_TYPE_JSON;
+        %tmp.10 = dup %tmp.5;
+        %tmp.11 = aputv %tmp.10 %tmp.7 %tmp.9;
+        %tmp.13 = const :headers;
+        %tmp.14 = newd 2;
+        %tmp.15 = "Content-Type";
+        %tmp.16 = getm $.Toybox.Communications;
+        %tmp.17 = getv %tmp.16 :REQUEST_CONTENT_TYPE_URL_ENCODED;
+        %tmp.18 = dup %tmp.14;
+        %tmp.19 = aputv %tmp.18 %tmp.15 %tmp.17;
+        %tmp.20 = "apikey";
+        %tmp.21 = "Eo1FfyXThRaEsN7ys7UA9kLKLL2tb40X";
+        %tmp.22 = dup %tmp.19;
+        %tmp.23 = aputv %tmp.22 %tmp.20 %tmp.21;
+        %tmp.24 = dup %tmp.11;
+        %tmp.25 = aputv %tmp.24 %tmp.13 %tmp.23;
+        lputv %options.1 %tmp.25;
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestDelegate.mc" 51 8 ]
+        %tmp.26 = getm $.Toybox.Communications;
+        %tmp.27 = getv function %tmp.26 :makeWebRequest;
+        %tmp.28 = "https://prim.iledefrance-mobilites.fr/marketplace/stop-monitoring?MonitoringRef=STIF%3AStopPoint%3AQ%3A473979%3A&LineRef=STIF%3ALine%3A%3AC01743%3A";
+        %tmp.29 = null;
+        %tmp.31 = lgetv %options.1;
+        %tmp.32 = self;
+        %tmp.33 = getv function %tmp.32 :method;
+        %tmp.35 = const :onReceive;
+        %tmp.36 = invoke %tmp.32 %tmp.33(%tmp.35);
+        invoke %tmp.26 %tmp.27(%tmp.28, %tmp.29, %tmp.31, %tmp.36);
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestDelegate_mc_40_43_57_4_stop:
+    }
+    //! Receive the data from the web request
+    //! @param responseCode The server response code
+    //! @param data Content from a successful request
+    [ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestDelegate.mc"; @line = 62; ]
+    public
+    function onReceive(responseCode as Number, data as Dictionary or String or Null) as Void {
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestDelegate_mc_62_100_68_4_start:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestDelegate.mc" 63 8 ]
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestDelegate_mc_63_8_67_8_if_stmt:
+        %tmp.2 = lgetv %responseCode;
+        %tmp.3 = 200;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestDelegate_mc_63_8_67_8_if_false;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestDelegate_mc_63_8_67_8_if_true:
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestDelegate_mc_63_33_65_8_start:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestDelegate.mc" 64 12 ]
+        %tmp.6 = getv ? :_notify;
+        %tmp.7 = getv function %tmp.6 :invoke;
+        %tmp.9 = lgetv %data;
+        invoke %tmp.6 %tmp.7(%tmp.9);
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestDelegate_mc_63_33_65_8_stop:
+        goto @C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestDelegate_mc_63_8_67_8_if_end;
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestDelegate_mc_63_8_67_8_if_false:
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestDelegate_mc_65_15_67_8_start:
+[ "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestDelegate.mc" 66 12 ]
+        %tmp.11 = getv ? :_notify;
+        %tmp.12 = getv function %tmp.11 :invoke;
+        %tmp.13 = "Failed to load\nError: ";
+        %tmp.14 = lgetv %responseCode;
+        %tmp.15 = getv function %tmp.14 :toString;
+        %tmp.16 = invoke %tmp.14 %tmp.15();
+        %tmp.17 = add %tmp.13 %tmp.16;
+        invoke %tmp.11 %tmp.12(%tmp.17);
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestDelegate_mc_65_15_67_8_stop:
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestDelegate_mc_63_8_67_8_if_end:
+C_Users_seria_AppData_Roaming_Garmin_ConnectIQ_Sdks_connectiq_sdk_win_7_4_3_2024_12_11_90ec25e45_samples_WebRequest_source_WebRequestDelegate_mc_62_100_68_4_stop:
+    }
+}
+[ @file = "C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\source\WebRequestDelegate.mc"; @line = 7; ]
+<init> {
+}

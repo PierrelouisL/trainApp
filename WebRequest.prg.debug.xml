@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<manifest filename="C:\Users\seria\AppData\Roaming\Garmin\ConnectIQ\Sdks\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\samples\WebRequest\manifest.xml"/>
+<pcToLineNum>
+<entry filename="c:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\gen\\006-B4024-00\\source\\Rez.mcgen" id="1" lineNum="7" parent="globals/Rez" pc="268435457" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestApp.mc" id="2" lineNum="12" parent="globals/WebRequestApp" pc="268435477" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestDelegate.mc" id="3" lineNum="14" parent="globals/WebRequestDelegate" pc="268435489" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestView.mc" id="4" lineNum="14" parent="globals/WebRequestView" pc="268435501" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestApp.mc" id="6" lineNum="31" parent="globals/WebRequestApp" pc="268435513" symbol="getInitialView"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestApp.mc" id="6" lineNum="32" parent="globals/WebRequestApp" pc="268435516" symbol="getInitialView"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestApp.mc" id="6" lineNum="33" parent="globals/WebRequestApp" pc="268435540" symbol="getInitialView"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestApp.mc" id="6" lineNum="34" parent="globals/WebRequestApp" pc="268435578" symbol="getInitialView"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestApp.mc" id="7" lineNum="15" parent="globals/WebRequestApp" pc="268435593" symbol="initialize"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestApp.mc" id="7" lineNum="16" parent="globals/WebRequestApp" pc="268435595" symbol="initialize"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestDelegate.mc" id="9" lineNum="27" parent="globals/WebRequestDelegate" pc="268435608" symbol="onMenu"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestDelegate.mc" id="9" lineNum="28" parent="globals/WebRequestDelegate" pc="268435610" symbol="onMenu"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestDelegate.mc" id="9" lineNum="29" parent="globals/WebRequestDelegate" pc="268435617" symbol="onMenu"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestDelegate.mc" id="10" lineNum="20" parent="globals/WebRequestDelegate" pc="268435619" symbol="initialize"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestDelegate.mc" id="10" lineNum="21" parent="globals/WebRequestDelegate" pc="268435621" symbol="initialize"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestDelegate.mc" id="10" lineNum="22" parent="globals/WebRequestDelegate" pc="268435637" symbol="initialize"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestDelegate.mc" id="11" lineNum="62" parent="globals/WebRequestDelegate" pc="268435647" symbol="onReceive"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestDelegate.mc" id="11" lineNum="63" parent="globals/WebRequestDelegate" pc="268435649" symbol="onReceive"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestDelegate.mc" id="11" lineNum="64" parent="globals/WebRequestDelegate" pc="268435658" symbol="onReceive"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestDelegate.mc" id="11" lineNum="66" parent="globals/WebRequestDelegate" pc="268435675" symbol="onReceive"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestDelegate.mc" id="12" lineNum="40" parent="globals/WebRequestDelegate" pc="268435703" symbol="&lt;globals/WebRequestDelegate/&lt;&gt;makeRequest&gt;"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestDelegate.mc" id="12" lineNum="41" parent="globals/WebRequestDelegate" pc="268435706" symbol="&lt;globals/WebRequestDelegate/&lt;&gt;makeRequest&gt;"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestDelegate.mc" id="12" lineNum="43" parent="globals/WebRequestDelegate" pc="268435725" symbol="&lt;globals/WebRequestDelegate/&lt;&gt;makeRequest&gt;"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestDelegate.mc" id="12" lineNum="51" parent="globals/WebRequestDelegate" pc="268435750" symbol="&lt;globals/WebRequestDelegate/&lt;&gt;makeRequest&gt;"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestDelegate.mc" id="13" lineNum="34" parent="globals/WebRequestDelegate" pc="268435785" symbol="onSelect"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestDelegate.mc" id="13" lineNum="35" parent="globals/WebRequestDelegate" pc="268435787" symbol="onSelect"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestDelegate.mc" id="13" lineNum="36" parent="globals/WebRequestDelegate" pc="268435794" symbol="onSelect"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestView.mc" id="14" lineNum="44" parent="globals/WebRequestView" pc="268435796" symbol="&lt;globals/WebRequestView/&lt;&gt;compute_waiting_time&gt;"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestView.mc" id="14" lineNum="45" parent="globals/WebRequestView" pc="268435799" symbol="&lt;globals/WebRequestView/&lt;&gt;compute_waiting_time&gt;"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestView.mc" id="14" lineNum="46" parent="globals/WebRequestView" pc="268435825" symbol="&lt;globals/WebRequestView/&lt;&gt;compute_waiting_time&gt;"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestView.mc" id="14" lineNum="47" parent="globals/WebRequestView" pc="268435833" symbol="&lt;globals/WebRequestView/&lt;&gt;compute_waiting_time&gt;"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestView.mc" id="14" lineNum="49" parent="globals/WebRequestView" pc="268435837" symbol="&lt;globals/WebRequestView/&lt;&gt;compute_waiting_time&gt;"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestView.mc" id="17" lineNum="18" parent="globals/WebRequestView" pc="268435863" symbol="initialize"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestView.mc" id="17" lineNum="19" parent="globals/WebRequestView" pc="268435865" symbol="initialize"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestView.mc" id="19" lineNum="53" parent="globals/WebRequestView" pc="268435882" symbol="onReceive"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestView.mc" id="19" lineNum="54" parent="globals/WebRequestView" pc="268435885" symbol="onReceive"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestView.mc" id="19" lineNum="55" parent="globals/WebRequestView" pc="268435901" symbol="onReceive"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestView.mc" id="19" lineNum="56" parent="globals/WebRequestView" pc="268435913" symbol="onReceive"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestView.mc" id="19" lineNum="57" parent="globals/WebRequestView" pc="268435928" symbol="onReceive"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestView.mc" id="19" lineNum="58" parent="globals/WebRequestView" pc="268435940" symbol="onReceive"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestView.mc" id="19" lineNum="59" parent="globals/WebRequestView" pc="268435955" symbol="onReceive"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestView.mc" id="19" lineNum="60" parent="globals/WebRequestView" pc="268435985" symbol="onReceive"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestView.mc" id="19" lineNum="61" parent="globals/WebRequestView" pc="268435994" symbol="onReceive"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestView.mc" id="19" lineNum="62" parent="globals/WebRequestView" pc="268436002" symbol="onReceive"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestView.mc" id="19" lineNum="64" parent="globals/WebRequestView" pc="268436006" symbol="onReceive"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestView.mc" id="19" lineNum="65" parent="globals/WebRequestView" pc="268436009" symbol="onReceive"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestView.mc" id="19" lineNum="66" parent="globals/WebRequestView" pc="268436012" symbol="onReceive"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestView.mc" id="19" lineNum="67" parent="globals/WebRequestView" pc="268436023" symbol="onReceive"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestView.mc" id="19" lineNum="68" parent="globals/WebRequestView" pc="268436067" symbol="onReceive"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestView.mc" id="19" lineNum="69" parent="globals/WebRequestView" pc="268436085" symbol="onReceive"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestView.mc" id="19" lineNum="70" parent="globals/WebRequestView" pc="268436139" symbol="onReceive"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestView.mc" id="19" lineNum="71" parent="globals/WebRequestView" pc="268436157" symbol="onReceive"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestView.mc" id="19" lineNum="72" parent="globals/WebRequestView" pc="268436206" symbol="onReceive"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestView.mc" id="19" lineNum="73" parent="globals/WebRequestView" pc="268436255" symbol="onReceive"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestView.mc" id="19" lineNum="76" parent="globals/WebRequestView" pc="268436312" symbol="onReceive"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestView.mc" id="20" lineNum="33" parent="globals/WebRequestView" pc="268436324" symbol="onUpdate"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestView.mc" id="20" lineNum="34" parent="globals/WebRequestView" pc="268436326" symbol="onUpdate"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestView.mc" id="20" lineNum="35" parent="globals/WebRequestView" pc="268436342" symbol="onUpdate"/>
+<entry filename="C:\\Users\\seria\\AppData\\Roaming\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-7.4.3-2024-12-11-90ec25e45\\samples\\WebRequest\\source\\WebRequestView.mc" id="20" lineNum="36" parent="globals/WebRequestView" pc="268436350" symbol="onUpdate"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="8388639" module="true" symbol="Graphics"/>
+<entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+<entry id="12" method="true" symbol="&lt;globals/WebRequestView/&lt;&gt;compute_waiting_time&gt;"/>
+<entry id="9" method="true" symbol="&lt;globals/WebRequestDelegate/&lt;&gt;makeRequest&gt;"/>
+<entry id="8388924" module="true" symbol="Gregorian"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry field="true" id="14" symbol="AppName"/>
+<entry field="true" id="11" symbol="&lt;globals/WebRequestView/&lt;&gt;_message&gt;"/>
+<entry id="4" module="true" symbol="globals/Rez/Strings"/>
+<entry id="7" object="true" symbol="WebRequestView"/>
+<entry id="8389594" symbol="headers"/>
+<entry id="8389080" method="true" symbol="onMenu"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry id="2" module="true" symbol="globals/Rez"/>
+<entry id="6" object="true" symbol="WebRequestDelegate"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry id="5" object="true" symbol="WebRequestApp"/>
+<entry id="8388637" module="true" symbol="Communications"/>
+<entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+<entry id="8389844" symbol="responseType"/>
+<entry id="8388644" module="true" symbol="System"/>
+<entry id="8389619" method="true" symbol="onSelect"/>
+<entry id="8388645" module="true" symbol="Time"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry id="10" method="true" symbol="onReceive"/>
+<entry id="8388640" module="true" symbol="Lang"/>
+<entry field="true" id="13" symbol="LauncherIcon"/>
+<entry id="8388610" symbol="statics"/>
+<entry id="8389123" method="true" symbol="onShow"/>
+<entry field="true" id="8" symbol="&lt;globals/WebRequestDelegate/&lt;&gt;_notify&gt;"/>
+<entry id="8389350" module="true" symbol="globals"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry id="8389125" method="true" symbol="onHide"/>
+<entry id="8388635" module="true" symbol="Application"/>
+</symbolTable>
+<localVars>
+<entry arg="true" endPc="268435646" name="handler" stackId="1" startPc="268435619"/>
+<entry arg="true" endPc="268435702" name="responseCode" stackId="1" startPc="268435647"/>
+<entry arg="true" endPc="268435702" name="data" stackId="2" startPc="268435647"/>
+<entry endPc="268435783" name="options" stackId="1" startPc="268435706"/>
+<entry arg="true" endPc="268435862" name="hour" stackId="1" startPc="268435796"/>
+<entry arg="true" endPc="268435862" name="min" stackId="2" startPc="268435796"/>
+<entry arg="true" endPc="268436323" name="args" stackId="1" startPc="268435882"/>
+<entry arg="true" endPc="268436388" name="dc" stackId="1" startPc="268436324"/>
+</localVars>
+<deviceInfo deviceVersion="3ec88d10900803ee2943328b35e298d1bb9907df" partNumber="006-B4024-00"/>
+<annotations>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+</annotations>
+<dataEntryOffsetMappings>
+<dataEntry label="globals" offset="49" parentId="" symbolId="globals" type="module"/>
+<dataEntry label="globals/Rez" offset="116" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry label="globals/WebRequestApp" offset="160" parentId="globals" symbolId="WebRequestApp" type="class"/>
+<dataEntry label="globals/WebRequestDelegate" offset="231" parentId="globals" symbolId="WebRequestDelegate" type="class"/>
+<dataEntry label="globals/WebRequestView" offset="320" parentId="globals" symbolId="WebRequestView" type="class"/>
+<dataEntry label="globals/Rez/Drawables" offset="427" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="462" parentId="Rez" symbolId="Strings" type="module"/>
+</dataEntryOffsetMappings>
+<functions>
+<functionEntry accessMode="public" endPc="268435476" name="&lt;init&gt;" parent="Rez" startPc="268435457">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435488" name="&lt;init&gt;" parent="WebRequestApp" startPc="268435477">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435500" name="&lt;init&gt;" parent="WebRequestDelegate" startPc="268435489">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435512" name="&lt;init&gt;" parent="WebRequestView" startPc="268435501">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onStart" parent="WebRequestApp">
+<param id="state"/>
+<documentation><![CDATA[<div class="description"> Handle app startup<br/> <div class="param"> state Startup arguments</div><br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435592" name="getInitialView" parent="WebRequestApp" startPc="268435513">
+<documentation><![CDATA[<div class="description"> Return the initial view for the app<br/> <div class="returns">Returns  Array Pair [View, Delegate]</div><br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435607" name="initialize" parent="WebRequestApp" startPc="268435593">
+<documentation><![CDATA[<div class="description"> Constructor<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="onStop" parent="WebRequestApp">
+<param id="state"/>
+<documentation><![CDATA[<div class="description"> Handle app shutdown<br/> <div class="param"> state Shutdown arguments</div><br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435618" name="onMenu" parent="WebRequestDelegate" startPc="268435608">
+<documentation><![CDATA[<div class="description"> On a menu event, make a web request<br/> <div class="returns">Returns  true if handled, false otherwise</div><br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435646" name="initialize" parent="WebRequestDelegate" startPc="268435619">
+<param id="handler"/>
+<documentation><![CDATA[<div class="description"> Set up the callback to the view<br/> <div class="param"> handler Callback method for when data is received</div><br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435702" name="onReceive" parent="WebRequestDelegate" startPc="268435647">
+<param id="responseCode"/>
+<param id="data"/>
+<documentation><![CDATA[<div class="description"> Receive the data from the web request<br/> <div class="param"> responseCode The server response code</div><br/> <div class="param"> data Content from a successful request</div><br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="private" endPc="268435784" name="&lt;globals/WebRequestDelegate/&lt;&gt;makeRequest&gt;" parent="WebRequestDelegate" startPc="268435703">
+<documentation><![CDATA[<div class="description"> Make the web request<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435795" name="onSelect" parent="WebRequestDelegate" startPc="268435785">
+<documentation><![CDATA[<div class="description"> On a select event, make a web request<br/> <div class="returns">Returns  true if handled, false otherwise</div><br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="private" endPc="268435862" name="&lt;globals/WebRequestView/&lt;&gt;compute_waiting_time&gt;" parent="WebRequestView" startPc="268435796">
+<param id="hour"/>
+<param id="min"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onShow" parent="WebRequestView">
+<documentation><![CDATA[<div class="description"> Restore the state of the app and prepare the view to be shown<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="onLayout" parent="WebRequestView">
+<param id="dc"/>
+<documentation><![CDATA[<div class="description"> Load your resources here<br/> <div class="param"> dc Device context</div><br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435881" name="initialize" parent="WebRequestView" startPc="268435863">
+<documentation><![CDATA[<div class="description"> Constructor<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="onHide" parent="WebRequestView">
+<documentation><![CDATA[<div class="description"> Called when this View is removed from the screen. Save the<br/> state of your app here.<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436323" name="onReceive" parent="WebRequestView" startPc="268435882">
+<param id="args"/>
+<documentation><![CDATA[<div class="description"> Show the result or status of the web request<br/> <div class="param"> args Data from the web request, or error message</div><br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436388" name="onUpdate" parent="WebRequestView" startPc="268436324">
+<param id="dc"/>
+<documentation><![CDATA[<div class="description"> Update the view<br/> <div class="param"> dc Device Context</div><br/></div>]]></documentation>
+</functionEntry>
+</functions>
+</debugInfo>
